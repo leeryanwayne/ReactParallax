@@ -1,2 +1,0 @@
-# ReactParallax
-Created with CodeSandbox
