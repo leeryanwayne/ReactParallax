@@ -1,12 +1,28 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-  background: grey;
+html {
   height: 100%;
   width: 100%;
 }
 
-.paralax {
-  width: 100%;
+body {
   height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: rgb(185, 185, 185);
+  height: 100%;
+  width: 100%;
+}
+
+.parallax {
+  width: inherit;
+  height: inherit;
 }
