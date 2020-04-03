@@ -79,6 +79,7 @@ class Parallax extends React.Component {
               zIndex: this.props.mouseListenerZIndex
             }}
             onMouseMove={this.onMouseMove}
+            onClick={this.props.onClick}
           />
         )}
         <div style={{ width: "inherit", height: "inherit" }}>
