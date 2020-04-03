@@ -52,12 +52,10 @@ class Parallax extends React.Component {
     }
     //get parent element position in document
     if (obj.offsetParent) {
-      /*
-      do{ 
-          e_posx += obj.offsetLeft;
-          e_posy += obj.offsetTop;
-      } while (obj = obj.offsetParent);
-      */
+      do {
+        e_posx += obj.offsetParent.offsetLeft;
+        e_posy += obj.offsetParent.offsetTop;
+      } while (obj.offsetParent);
     }
 
     this.setState({ mouseX: m_posx - e_posx, mouseY: m_posy - e_posy });
@@ -71,7 +69,7 @@ class Parallax extends React.Component {
     let offsetY = mouseY - this.innerHeight / 2;
 
     return (
-      <div id={this.id} className="paralax">
+      <div id={this.id} className="parallax">
         {!this.props.mouseX && !this.props.mouseY && (
           <div
             style={{
